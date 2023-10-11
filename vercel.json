@@ -1,0 +1,3 @@
+{
+    "rewrites": [{ "source": "/(.*)", "destination": "https://portfolio-v1-nu-henna.vercel.app/Index.html" }]
+}

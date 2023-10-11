@@ -1,0 +1,468 @@
+:root{
+    --textcolor : white;    
+    --bgcolor: black;
+    --bordercolor: #007FFF
+}
+body{
+    color: var(--textcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Mooli', sans-serif;
+}
+.container{
+    display: inline-flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 75vw;
+    height: 60vh;
+    border-radius: 19px;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.border{
+    margin: 100px;
+    padding: 1px;  
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(0deg, var(--bordercolor), rgb(31, 31, 31));
+    transition: all 2s;
+    opacity:0;
+    z-index: 1;
+}
+@keyframes rotate {
+    0% {
+        background: linear-gradient(0deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    1% {
+        background: linear-gradient(3.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    2% {
+        background: linear-gradient(7.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    3% {
+        background: linear-gradient(10.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    4% {
+        background: linear-gradient(14.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    5% {
+        background: linear-gradient(18deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    6% {
+        background: linear-gradient(21.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    7% {
+        background: linear-gradient(25.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    8% {
+        background: linear-gradient(28.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    9% {
+        background: linear-gradient(32.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    10% {
+        background: linear-gradient(36deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    11% {
+        background: linear-gradient(39.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    12% {
+        background: linear-gradient(43.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    13% {
+        background: linear-gradient(46.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    14% {
+        background: linear-gradient(50.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    15% {
+        background: linear-gradient(54deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    16% {
+        background: linear-gradient(57.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    17% {
+        background: linear-gradient(61.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    18% {
+        background: linear-gradient(64.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    19% {
+        background: linear-gradient(68.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    20% {
+        background: linear-gradient(72deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    21% {
+        background: linear-gradient(75.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    22% {
+        background: linear-gradient(79.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    23% {
+        background: linear-gradient(82.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    24% {
+        background: linear-gradient(86.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    25% {
+        background: linear-gradient(90deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    26% {
+        background: linear-gradient(93.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    27% {
+        background: linear-gradient(97.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    28% {
+        background: linear-gradient(100.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    29% {
+        background: linear-gradient(104.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    30% {
+        background: linear-gradient(108deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    31% {
+        background: linear-gradient(111.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    32% {
+        background: linear-gradient(115.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    33% {
+        background: linear-gradient(118.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    34% {
+        background: linear-gradient(122.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    35% {
+        background: linear-gradient(126deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    36% {
+        background: linear-gradient(129.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    37% {
+        background: linear-gradient(133.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    38% {
+        background: linear-gradient(136.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    39% {
+        background: linear-gradient(140.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    40% {
+        background: linear-gradient(144deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    41% {
+        background: linear-gradient(147.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    42% {
+        background: linear-gradient(151.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    43% {
+        background: linear-gradient(154.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    44% {
+        background: linear-gradient(158.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    45% {
+        background: linear-gradient(162deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    46% {
+        background: linear-gradient(165.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    47% {
+        background: linear-gradient(169.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    48% {
+        background: linear-gradient(172.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    49% {
+        background: linear-gradient(176.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    50% {
+        background: linear-gradient(180deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    51% {
+        background: linear-gradient(183.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    52% {
+        background: linear-gradient(187.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    53% {
+        background: linear-gradient(190.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    54% {
+        background: linear-gradient(194.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    55% {
+        background: linear-gradient(198deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    56% {
+        background: linear-gradient(201.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    57% {
+        background: linear-gradient(205.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    58% {
+        background: linear-gradient(208.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    59% {
+        background: linear-gradient(212.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    60% {
+        background: linear-gradient(216deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    61% {
+        background: linear-gradient(219.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    62% {
+        background: linear-gradient(223.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    63% {
+        background: linear-gradient(226.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    64% {
+        background: linear-gradient(230.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    65% {
+        background: linear-gradient(234deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    66% {
+        background: linear-gradient(237.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    67% {
+        background: linear-gradient(241.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    68% {
+        background: linear-gradient(244.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    69% {
+        background: linear-gradient(248.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    70% {
+        background: linear-gradient(252deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    71% {
+        background: linear-gradient(255.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    72% {
+        background: linear-gradient(259.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    73% {
+        background: linear-gradient(262.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    74% {
+        background: linear-gradient(266.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    75% {
+        background: linear-gradient(270deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    76% {
+        background: linear-gradient(273.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    77% {
+        background: linear-gradient(277.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    78% {
+        background: linear-gradient(280.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    79% {
+        background: linear-gradient(284.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    80% {
+        background: linear-gradient(288deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    81% {
+        background: linear-gradient(291.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    82% {
+        background: linear-gradient(295.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    83% {
+        background: linear-gradient(298.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    84% {
+        background: linear-gradient(302.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    85% {
+        background: linear-gradient(306deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    86% {
+        background: linear-gradient(309.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    87% {
+        background: linear-gradient(313.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    88% {
+        background: linear-gradient(316.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    89% {
+        background: linear-gradient(320.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    90% {
+        background: linear-gradient(324deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    91% {
+        background: linear-gradient(327.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    92% {
+        background: linear-gradient(331.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    93% {
+        background: linear-gradient(334.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    94% {
+        background: linear-gradient(338.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    95% {
+        background: linear-gradient(342deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    96% {
+        background: linear-gradient(345.6deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    97% {
+        background: linear-gradient(349.2deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    98% {
+        background: linear-gradient(352.8deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    99% {
+        background: linear-gradient(356.4deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+    100% {
+        background: linear-gradient(360deg, var(--bordercolor), rgb(31, 31, 31));
+    }
+}
+.border:hover{
+    animation: rotate 2s linear 0s 1;
+}
+body > .border:hover{
+    transform: scale(1.2);
+    padding: 3px;
+}
+.border:hover .container{
+    border-radius: 17px;
+}
+#dp{
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+}
+.pcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pcontent h2,h1{
+    margin: 0;
+}
+.sky {
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    background-color: #000;
+    opacity: 0;
+    transition: all 2s;
+}
+.star {
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+}
+.card{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.projects,.skills{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.projects .border,.skills .border{
+    width: 20%;
+    margin: 0;
+    background: linear-gradient(0deg, var(--bordercolor), rgb(31, 31, 31));
+}
+.projectcontent{
+    padding: 15px;
+}
+.loading{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    transition: all 2s;
+}
+.animation-text {
+    position: relative;
+    top:50vh;
+    font-size: 48px;
+    font-weight: bold;
+    color: transparent;
+    text-align: center;
+    white-space: nowrap;
+    animation: revealText 5s ease-in-out forwards;
+    transition: all 2s;
+}
+@keyframes revealText {
+    0% {
+        letter-spacing: 2em;
+        color: transparent;
+    }
+    100% {
+        letter-spacing: normal;
+        color: var(--textcolor);
+    }
+}
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #636363; 
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--bordercolor);
+    transition: all 1s;
+    opacity: 0.5;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.button:hover{
+    cursor: pointer;
+}
